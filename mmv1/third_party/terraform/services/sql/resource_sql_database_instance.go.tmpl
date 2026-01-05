@@ -700,7 +700,7 @@ API (for read pools, effective_availability_type may differ from availability_ty
 									"server_certificate_rotation_mode": {
 										Type:         schema.TypeString,
 										Optional:     true,
-										ValidateFunc: validation.StringInSlice([]string{"SERVER_CERTIFICATE_ROTATION_MODE_UNSPECIFIED", "NO_AUTOMATIC_ROTATION", "AUTOMATIC_ROTATION_DURING_MAINTENANCE"}, false),
+										ValidateFunc: validation.StringInSlice([]string{"NO_AUTOMATIC_ROTATION", "AUTOMATIC_ROTATION_DURING_MAINTENANCE"}, false),
 										Description:  `Settings for how the server certificate gets rotated.`,
 										AtLeastOneOf: ipConfigurationKeys,
 									},
